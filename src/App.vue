@@ -1,17 +1,29 @@
 <template>
+
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <layout-header></layout-header>
+
+    <layout-sidebar></layout-sidebar>
+
+    <layout-footer></layout-footer>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import LayoutHeader from './components/LayoutHeader.vue'
+import LayoutSidebar from './components/LayoutSidebar.vue'
+import LayoutFooter from './components/LayoutFooter.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+      LayoutHeader,
+      LayoutSidebar,
+      LayoutFooter,
+
   }
 }
 </script>
